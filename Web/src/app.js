@@ -110,7 +110,7 @@ export const buildScene = () => {
     let modelReady = false;
     let virtualCamera = null;
     const loader = new GLTFLoader();
-    loader.load('/Model2.glb', function (gltf) {
+    loader.load('/dist/Model2.glb', function (gltf) {
         let glbModel = gltf.scene;
         rtScene.add(glbModel);
         var flares = glbModel.getObjectByName("xFlares");
